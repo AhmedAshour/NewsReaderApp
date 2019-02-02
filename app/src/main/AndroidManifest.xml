@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="me.ahmedashour.newsreaderapp">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
@@ -10,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".NewsActivity"
+            android:name=".views.NewsActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,13 +21,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NewsDetailsActivity"
+            android:name=".views.NewsDetailsActivity"
             android:label="@string/title_item_detail"
-            android:parentActivityName=".NewsActivity"
+            android:parentActivityName=".views.NewsActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="me.ahmedashour.newsreaderapp.NewsActivity" />
+                android:value="me.ahmedashour.newsreaderapp.views.NewsActivity" />
         </activity>
     </application>
 

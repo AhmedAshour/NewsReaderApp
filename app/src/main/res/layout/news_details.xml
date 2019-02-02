@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:textIsSelectable="true"
+    tools:context=".views.NewsDetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/text_margin">
+
+        <TextView
+            android:id="@+id/tv_date_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/article_date"
+            android:textSize="@dimen/article_date_size" />
+
+        <TextView
+            android:id="@+id/tv_source_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/article_source"
+            android:textSize="@dimen/article_source_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_desc_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/article_desc"
+        android:textColor="@color/black"
+        android:textSize="@dimen/article_desc_details_size" />
+
+</LinearLayout>
+
+
+    <!--
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/item_detail"
     style="?android:attr/textAppearanceLarge"
@@ -7,4 +54,4 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:textIsSelectable="true"
-    tools:context=".NewsDetailsFragment" />
+    tools:context=".views.NewsDetailsFragment" />-->
