@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -23,6 +24,7 @@ import me.ahmedashour.newsreaderapp.model.Article;
 public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsViewHolder> {
 
     private List<Article> articleList;
+    private List<Article> articleListCopy;
     private Context context;
     private View.OnClickListener mListener;
 
@@ -33,6 +35,8 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsViewHolder> {
         this.context = context;
         this.articleList = articleList;
         this.mListener = mListener;
+        articleListCopy = new ArrayList<>();
+        articleListCopy.addAll(articleList);
 
     }
 
@@ -63,6 +67,21 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsViewHolder> {
     public int getItemCount() {
         if (articleList != null) return articleList.size();
         else return 0;
+    }
+
+    public void filterArticles(String text) {
+        articleList.clear();
+        if(text.isEmpty()){
+            articleList.addAll(articleListCopy);
+        } else if(text.length() >= 3){
+            text = text.toLowerCase();
+            for(Article article: articleListCopy){
+                if(article.getTitle().toLowerCase().contains(text)){
+                    articleList.add(article);
+                }
+            }
+        }
+        notifyDataSetChanged();
     }
 }
 
