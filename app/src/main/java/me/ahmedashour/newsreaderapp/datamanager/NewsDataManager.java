@@ -5,7 +5,7 @@ import android.util.Log;
 import java.util.List;
 
 import androidx.lifecycle.MutableLiveData;
-import me.ahmedashour.newsreaderapp.Constants;
+import me.ahmedashour.newsreaderapp.utils.Constants;
 import me.ahmedashour.newsreaderapp.model.Article;
 import me.ahmedashour.newsreaderapp.model.ArticlesList;
 import me.ahmedashour.newsreaderapp.network.NewsAPI;

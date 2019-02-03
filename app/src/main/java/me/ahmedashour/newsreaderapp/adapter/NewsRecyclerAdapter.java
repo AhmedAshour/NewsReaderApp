@@ -19,6 +19,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import me.ahmedashour.newsreaderapp.R;
+import me.ahmedashour.newsreaderapp.utils.Utils;
 import me.ahmedashour.newsreaderapp.model.Article;
 
 public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsViewHolder> {
@@ -56,12 +57,14 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsViewHolder> {
             holder.setImage(article.getUrlToImage());
             holder.setTitle(article.getTitle());
             holder.setDesc(article.getDescription());
-            holder.setDate(article.getPublishedAt());
+            holder.setDate(Utils.dateFormater(article.getPublishedAt()));
+
             holder.setSource(article.getSource().getName());
 
         } catch (Exception e) {
         }
     }
+
 
     @Override
     public int getItemCount() {

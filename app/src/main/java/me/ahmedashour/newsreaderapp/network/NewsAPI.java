@@ -1,6 +1,6 @@
 package me.ahmedashour.newsreaderapp.network;
 
-import me.ahmedashour.newsreaderapp.Constants;
+import me.ahmedashour.newsreaderapp.utils.Constants;
 import me.ahmedashour.newsreaderapp.model.ArticlesList;
 import retrofit2.Call;
 import retrofit2.http.GET;

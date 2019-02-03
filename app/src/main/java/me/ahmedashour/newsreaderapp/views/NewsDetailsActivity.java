@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.widget.Toolbar;
 
@@ -12,7 +11,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
-import me.ahmedashour.newsreaderapp.Constants;
+import me.ahmedashour.newsreaderapp.utils.Constants;
 import me.ahmedashour.newsreaderapp.R;
 
 import android.view.MenuItem;

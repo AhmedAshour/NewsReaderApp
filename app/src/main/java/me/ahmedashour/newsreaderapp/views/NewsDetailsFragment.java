@@ -1,7 +1,5 @@
 package me.ahmedashour.newsreaderapp.views;
 
-import android.app.Activity;
-
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.squareup.picasso.Picasso;
 
@@ -15,16 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.List;
-
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import me.ahmedashour.newsreaderapp.Constants;
+import me.ahmedashour.newsreaderapp.utils.Constants;
 import me.ahmedashour.newsreaderapp.R;
+import me.ahmedashour.newsreaderapp.utils.Utils;
 import me.ahmedashour.newsreaderapp.model.Article;
 import me.ahmedashour.newsreaderapp.viewmodel.NewsViewModel;
 
@@ -73,7 +68,7 @@ public class NewsDetailsFragment extends Fragment {
             article = articleList.get(Integer.valueOf(position));
             Log.d(TAG, article.toString());
 
-            tvDateDetails.setText(article.getPublishedAt());
+            tvDateDetails.setText(Utils.dateFormater(article.getPublishedAt()));
             tvDescDetails.setText(article.getDescription());
             tvSourceDetails.setText(article.getSource().getName());
 

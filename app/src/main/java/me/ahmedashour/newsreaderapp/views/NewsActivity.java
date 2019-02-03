@@ -1,33 +1,24 @@
 package me.ahmedashour.newsreaderapp.views;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.SearchView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import me.ahmedashour.newsreaderapp.Constants;
+import me.ahmedashour.newsreaderapp.utils.Constants;
 import me.ahmedashour.newsreaderapp.R;
 import me.ahmedashour.newsreaderapp.adapter.NewsRecyclerAdapter;
 import me.ahmedashour.newsreaderapp.viewmodel.NewsViewModel;
@@ -55,14 +46,8 @@ public class NewsActivity extends AppCompatActivity implements SearchView.OnQuer
         setSupportActionBar(toolbar);
         toolbar.setTitle(getTitle());
 
-
         initRecyclerView();
         initViewModel();
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view ->
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show());
 
         if (findViewById(R.id.item_detail_container) != null) {
             mTwoPane = true;

@@ -28,6 +28,7 @@
             android:id="@+id/tv_source_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:text="@string/article_source"
