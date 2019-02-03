@@ -74,12 +74,12 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsViewHolder> {
 
     public void filterArticles(String text) {
         articleList.clear();
-        if(text.isEmpty()){
+        if (text.isEmpty()) {
             articleList.addAll(articleListCopy);
-        } else if(text.length() >= 3){
+        } else if (text.length() >= 3) {
             text = text.toLowerCase();
-            for(Article article: articleListCopy){
-                if(article.getTitle().toLowerCase().contains(text)){
+            for (Article article : articleListCopy) {
+                if (article.getTitle().toLowerCase().contains(text)) {
                     articleList.add(article);
                 }
             }

@@ -9,7 +9,11 @@ public final class Constants {
     public final static String API_KEY = "&apiKey=6de94bcac40644bb996324244e69beb1";
 
     public final static class EndPoints{
-        public final static String EVERYTHING = "everything";
+        public final static String EVERYTHING = "everything?";
+        public final static String TOP_HEADLINES = "top-headlines?";
+
+        public final static String COUNTRY_EGYPT = "country=eg";
+        public final static String COUNTRY_US = "country=us";
 
     }
 }

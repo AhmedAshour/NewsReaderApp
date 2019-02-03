@@ -7,7 +7,10 @@ import retrofit2.http.GET;
 
 public interface NewsAPI {
 
-    @GET(Constants.EndPoints.EVERYTHING+"?q=bitcoin"+ Constants.API_KEY)
-    Call<ArticlesList> getEverything();
+    @GET(Constants.EndPoints.TOP_HEADLINES+Constants.EndPoints.COUNTRY_EGYPT + Constants.API_KEY)
+    Call<ArticlesList> getTopHeadlinesEG();
+
+    @GET(Constants.EndPoints.TOP_HEADLINES+Constants.EndPoints.COUNTRY_US + Constants.API_KEY)
+    Call<ArticlesList> getTopHeadlinesUS();
 
 }

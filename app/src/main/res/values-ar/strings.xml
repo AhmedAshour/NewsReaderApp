@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="article_title_details">تفاصيل المقالة</string>
+    <string name="article_title">عنوان المقالة</string>
+    <string name="article_date">التاريخ</string>
+    <string name="article_source">المصدر</string>
+    <string name="news_activity_title">الاخبار</string>
+</resources>

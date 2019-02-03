@@ -10,7 +10,9 @@
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
-    tools:context=".views.NewsActivity">
+    tools:context=".views.NewsActivity"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp">
 
     <!--
     This layout is a two-pane layout for the Items
@@ -26,9 +28,10 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        app:layoutManager="LinearLayoutManager"
         tools:context="me.ahmedashour.newsreaderapp.views.NewsActivity"
-        tools:listitem="@layout/news_item_content" />
+        tools:listitem="@layout/news_item_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
 
     <FrameLayout
         android:id="@+id/item_detail_container"

@@ -69,7 +69,6 @@ public class NewsActivity extends AppCompatActivity implements SearchView.OnQuer
                 @Override
                 public void onClick(View v) {
                     String position = String.valueOf(recyclerView.getChildLayoutPosition(v));
-                    Toast.makeText(NewsActivity.this, String.valueOf(position), Toast.LENGTH_SHORT).show();
 
                     if (mTwoPane) {
                         Bundle args = new Bundle();
