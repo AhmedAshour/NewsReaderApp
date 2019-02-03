@@ -5,4 +5,5 @@
     <string name="article_date">Date</string>
     <string name="article_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate id nisi maximus suscipit. Etiam vitae eros id eros semper finibus. Fusce a malesuada sapien. Etiam est diam, facilisis lobortis augue vitae, maximus maximus eros. Proin cursus quam et sapien pharetra lacinia. Sed egestas vitae ipsum id venenatis. Ut a quam vehicula, rutrum orci in, molestie lectus. Maecenas eu lorem quis dui congue sagittis. Aenean gravida et ante eget imperdiet. Curabitur lacus ligula, dignissim vitae tellus in, mollis euismod ligula. Ut vitae dignissim ex. Sed nec fermentum enim. Nunc ut molestie purus, vel scelerisque felis. Sed nulla tortor, vestibulum ac egestas ac, finibus sit amet arcu.</string>
     <string name="article_source">Source:</string>
+    <string name="news_activity_title">News</string>
 </resources>

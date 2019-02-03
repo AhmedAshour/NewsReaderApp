@@ -100,6 +100,7 @@ public class NewsActivity extends AppCompatActivity {
                 } else {
                     Intent intent = new Intent(v.getContext(), NewsDetailsActivity.class);
                     intent.putExtra(Constants.ARG_ARTICLE_POSITION, position);
+                    intent.putExtra(Constants.ARG_URL, articleList.get(Integer.valueOf(position)).getUrl());
                     startActivity(intent);
                 }
             }));
